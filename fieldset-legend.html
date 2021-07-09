@@ -1,0 +1,39 @@
+<!--
+    <fieldset>
+        - faz o agrupamento de campos que possuem o mesmo propósito
+        - tem por função deixar mais semântico e com maior acessibilidade (pois esse fieldset é melhor interpretado pelos leitores de tela)
+
+    Atributos especiais:
+    - disabled
+        - desabilita todos os elementos internos ao fieldset, assim não serão enviados ao submeter o formulário
+
+    - form
+        - este atributo permite com que a gente link o fieldset com algum formulário da página, ou seja, com a utilização deste atributo e se for colocado o id correto, o fieldset não precisa estar dentro do formulário 
+
+    - name: para definir o nome do grupo do fieldset, não aparecerá em tela - tem o intuito de deixar melhor agrupado, melhorando a semântica 
+
+    - <legend>: sempre acompanha o fieldset, este é de fato o nome do agrupamento que aparecerá em tela, sendo o primeiro elemento dentro do fieldset
+
+-->
+
+<form action="">
+    <fieldset disabled>
+        <legend>CONTATO</legend>
+
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
+</form>
+
+<!--..................................................-->
+
+<form id="contato" action="">
+
+    <fieldset form="contato" name="inputs-contact">
+        <legend>CONTATO</legend>
+
+        <label for="">Nome</label>
+        <input type="text">
+    </fieldset>
+
+    <!-- os dados deste fieldset seriam enviados ao form, pois estão interligados pelo id contato -->

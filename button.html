@@ -1,0 +1,25 @@
+<!--
+    <button>
+        - Primariamente utilizado para enviar formulários
+        -  Sem estilizar por css, por padrão, é estilizado pelo user agent
+
+    Atributos comuns
+    - type
+        - submit: botão fará com que o formulário seja enviado
+        - reset
+        - button
+    - autofocus: no caso de só tiver um botão com esta tag, por exemplo se apertasse ENTER no teclado, automaticamente seria realizado a ação do botão (como enviar)
+    - disabled
+    - name: usado junto com o value - então o valor atribuído no value será  também atribuído ao que estiver com determinado name;
+    - value
+    - form: serve para linkar a um formulário
+-->
+
+<button type="submit">Enviar</button>
+
+<form>
+    <input type="text" value="preencha aqui">
+    <button type="reset">Limpar campo</button>
+</form>
+
+<!-- ao escrever algo no campo de preenchimento, ao clicar no botão, limparia todo o campo e ficaria sem nada (pois o valor atribuído foi vazio, mas caso fosse atribuído um "preencha aqui" por exemplo, então ao clicar no botão, o campo voltaria ao preencha aqui)-->

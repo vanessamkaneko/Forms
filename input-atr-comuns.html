@@ -1,0 +1,49 @@
+<!--
+    <input>
+    - Um dos mais usados em formulários
+    - Aceita diversos tipos de dados
+    - Um dos mais poderosos e complexos
+    - Elevado número de combinações
+
+    Atributos
+    - type
+    - name
+    - id
+    - number
+    - email
+    - file
+    - password
+    - ETC
+-->
+
+<input type="date">
+
+<!-- <input> Atributos comuns
+    - autocomplete: sugere informações que são utilizadas com frequênicia no navegador, ex: email
+
+    - autofocus: é um boolean; indica que o "clique" vai automaticamente  no campo com este atributo, ficando ali piscando | apenas 1 por página!!!
+
+    - disabled: é um boolean; não dá para preencher o campo ou alterar
+
+    - readonly: é um boolean; apesar da escrita não ficar opaca (como no disabled), não dá para fazer alterações (quase todos)
+
+    - value
+
+    - form: serve para linkar o input a algum formulário da página (para isso, atribui um id e também precisa de um name) - (quase todos os campos)
+
+    - name
+
+    - required (quase todos os campos): é um boolean; o required indica que o campo é obrigatório p/ ser preenchido
+
+    - placeholder: p/ campo de password, search, tel, text, url, email... p/ quase todos os campos
+
+-->
+
+<input type="text" autofocus />
+
+<input type="text" value="text" disabled />
+
+<input type="text" value="exemplo de preenchimento" readonly />
+
+<form id="meu-form"></form>
+<input name="email" type="email" form="meu-form">

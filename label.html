@@ -1,0 +1,32 @@
+<!--
+    <label>
+        - para associar e identificar uma (ou mais) tag(s) de entrada de dados
+        - melhor acessibilidade
+        - pode-se clicar para mudar o foco da entrada de dados
+
+    Atributos
+    - for
+        - para fazer a conexão entre este label e a tag de entrada de dados
+        - é feita via id do input
+        - só funciona com elementos específicos: button, input (not hidden), meter, output, progress, select, textarea
+-->
+
+<label>
+    Nome completo:
+    <input type="text"></input>
+</label>
+
+<!-- desta forma ao clicar no campo a ser preenchido ou mesmo no nome do campo, ficará piscando o clique -->
+
+<label> Nome completo:</label>
+<input type="text"></input>
+
+<!-- já deste jeito, o clique só pisca ao clicar na área a ser preenchida, se clicar no nome do campo, isto não ocorre-->
+
+<label for="name"> Nome completo:</label>
+<input id="name" type="text"></input>
+
+<!-- desta maneira, o comportamento é semelhante ao primeiro jeito -->
+
+<label for="completename">Nome</label>
+<input type="text" name="name" id="completename"></input>

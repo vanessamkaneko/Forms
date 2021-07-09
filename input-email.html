@@ -1,0 +1,51 @@
+<!--
+    <input type="email" />
+
+    - Espera que o usuário digite um email
+    - Só irá validar se o valor digitado for um email (com @ e .com)
+
+    # Atributos
+
+    - placeholder
+    - readonly / disabled
+    - value
+
+    - required
+
+    - mutiple:
+        * o campo irá receber 1 ou mais emails, separado por vírgulas | é um booleano
+
+    - minlength/ maxlength: mínimo e máx de caracteres
+
+    - size: tamanho que terá o campo (visualmente)
+
+    - pattern
+        * Uso de expressão regular para validar o campo
+        * Exemplo: o usuário só poderá colocar email do domínio uel.br
+            * pattern=".+uel\.br"
+
+    - list
+        *o id de uma tag <datalist> que está no mesmo documento
+        *<datalist> irá conter uma lista de valores pré-definidos a fim de sugerir ao usuário quais valores estão disponíveis
+                * valores do <datalist> que não forem compatíveis com o campo não serão apresentados como sugestão
+
+
+-->
+
+<form action="">
+    <input type="email" pattern=".+uel\.br" title="Apenas emails com domínio @uel.br">
+
+    <button type="submit">Enviar</button>
+
+</form>
+
+
+<form action="">
+    <datalist id="emailslist">
+        <option> vanessa.mitiek@uel.br</option>
+    </datalist>
+    <input type="email" list="emailslist">
+
+    <button type="submit">Enviar</button>
+
+</form>

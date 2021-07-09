@@ -1,0 +1,32 @@
+<!--
+    <input type="hidden" id="timestamp" name="timestamp" value="12378483">
+
+    - invisível ao usuário
+    - será enviado com o formulário
+    - não receberá foco
+    - leitores de teal não percebem este campo
+-->
+
+<input type="hidden" name="id" value="8">
+
+<!--
+    <input type="radio">
+
+    - Projetado para selecionar uma única opção de um grupo de opções
+
+    # Atributos essenciais
+    - checked: indica que o campo foi marcado
+    - value: valor que aquele campo contém
+-->
+
+<fieldset>
+    <legend> Você gosta de abrobrinha?</legend>
+
+    <label for="yep">sim</label>
+    <input type="radio" id="yep" name="abobrinha" value="yes">
+
+    <label for="no">não</label>
+    <input checked type="radio" id="no" name="abobrinha" value="no">
+</fieldset>
+
+<!-- EX: Se for marcado sim e o formulário for enviado, lá no backend irá mostrar o name e o value - abobrinha, sim -->

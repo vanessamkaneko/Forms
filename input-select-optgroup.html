@@ -1,0 +1,48 @@
+<!--
+    <select>
+        - Controle que fornece um menu de opções
+
+    <option>
+        - Faz parte do select
+        - Contém as opções a serem selecionadas
+    
+        # Atributos necessários
+        - multiple: habilita múltiplas opções
+
+        - size: quantas opções visíveis?
+
+
+-->
+
+<label for="carselect">Qual o modelo do seu carro?</label>
+<select name="carmodel" id="carselect" multiple size="2">
+    <option value="">Selecione o modelo</option>
+    <option value="fiat">Palio</option>
+    <option value="audi">TT</option>
+    <option value="ford">Fiesta</option>
+</select> <br> <br>
+
+<!-- No backend: carmodel=fiat, por ex. -->
+
+<!--
+    Option group
+
+    - Funciona dentro do <select>, pois faz um agrupamento dos options dentro do select
+-->
+
+<label>Choose one o more pets:
+    <select name="pet" multiple size="4">
+        <optgroup label="4-legged pets">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="rabbit">Rabbit</option>
+        </optgroup>
+        <optgroup label="Flying pets">
+            <option value="parrot">Parrot</option>
+            <option value="macaw">Macaw</option>
+            <option value="albatross">Albatross</option>
+            </option>
+        </optgroup>
+
+    </select>
+</label>
